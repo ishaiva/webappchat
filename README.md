@@ -100,6 +100,8 @@ Run the application:
 
     sudo python3 app.py
 
+![app_Screenshot_in_ter](https://github.com/ishaiva/webappchat/assets/111692746/2decd03f-b2d4-4238-8323-0bddd6582131)
+
 ### Usage
 
 Open a web browser and navigate to https://192.168.x.x:5000. 
