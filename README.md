@@ -67,6 +67,8 @@ setup keys
 
     sudo python3 setup.py
 
+![setup_Screenshot](https://github.com/ishaiva/webappchat/assets/111692746/7fe705bd-b1b8-4b7f-9f59-f3f602e9ed83)
+
 ## Configuration for Deployment
 
 Before running the application, you'll need to configure a few settings to make it compatible with your environment.
@@ -106,6 +108,8 @@ Run the application:
 
 Open a web browser and navigate to https://192.168.x.x:5000. 
 Enter a nickname and start chatting. You can also share files and view your connection statistics.
+
+![webappGUIScreenshot](https://github.com/ishaiva/webappchat/assets/111692746/a5bf977e-1826-40a4-8850-22438e76499b)
 
 ### Contributing
 
