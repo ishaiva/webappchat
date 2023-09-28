@@ -4,22 +4,22 @@ WebChat – Secure Chat Application
 WebChat is a real-time chat application designed with a strong emphasis on user privacy and data protection. Utilizing double encryption, WebChat ensures that your messages are always kept away from prying eyes.
 Table of Contents
 
-    Features
-    Double Encryption
-    Getting Started
-    Usage
-    Contributing
-    License
+ Features
+ Double Encryption
+ Getting Started
+ Usage
+ Contributing
+ License
 
 Features
 
-    Real-Time Chat: Seamless real-time messaging to keep you connected with your peers.
+  Real-Time Chat: Seamless real-time messaging to keep you connected with your peers.
+  
+  File Sharing: Share documents and media files with complete peace of mind.
 
-    File Sharing: Share documents and media files with complete peace of mind.
+  Client-Server Architecture: Ensures fast message delivery without compromising on security.
 
-    Client-Server Architecture: Ensures fast message delivery without compromising on security.
-
-    Intuitive User Interface: A user-friendly design to make your chat experience smooth.
+  Intuitive User Interface: A user-friendly design to make your chat experience smooth.
 
 Double Encryption
 
@@ -28,51 +28,49 @@ How Double Encryption Works
 
 At a high level, double encryption involves:
 
-    First Layer of Encryption: The initial data is encrypted using the first encryption algorithm, producing an intermediary encrypted result.
+First Layer of Encryption: The initial data is encrypted using the first encryption algorithm, producing an intermediary encrypted result.
 
-    Second Layer of Encryption: This intermediary encrypted result is then encrypted again using a second, different encryption algorithm.
+Second Layer of Encryption: This intermediary encrypted result is then encrypted again using a second, different encryption algorithm.
 
 To decrypt the data, the process is simply reversed: The data is first decrypted using the second encryption algorithm, and then again using the first.
 Benefits of Double Encryption
 
-    Enhanced Security: Even if an attacker manages to break one encryption layer, the data remains secure behind the second layer.
+Enhanced Security: Even if an attacker manages to break one encryption layer, the data remains secure behind the second layer.
 
-    Mitigate Risks: In the case of any vulnerabilities found in one encryption algorithm, the data is still protected by the second encryption method.
+Mitigate Risks: In the case of any vulnerabilities found in one encryption algorithm, the data is still protected by the second encryption method.
 
-    Increase Difficulty for Brute Force Attacks: Double encryption considerably increases the computational power and time required to perform brute force attacks.
+Increase Difficulty for Brute Force Attacks: Double encryption considerably increases the computational power and time required to perform brute force attacks.
 
 Encryption Algorithms Used
 
-    First Layer: AES (Advanced Encryption Standard) – A symmetric encryption algorithm that's widely recognized for its robustness and speed. It uses block ciphers to encrypt and decrypt data in blocks.
+First Layer: AES (Advanced Encryption Standard) – A symmetric encryption algorithm that's widely recognized for its robustness and speed. It uses block ciphers to encrypt and decrypt data in blocks.
 
-    Second Layer: RSA (Rivest–Shamir–Adleman) – An asymmetric encryption algorithm. It uses a pair of keys: a public key, which encrypts data, and a private key, which decrypts data. This ensures that even if the public key is known, the data cannot be decrypted without the private key.
+Second Layer: RSA (Rivest–Shamir–Adleman) – An asymmetric encryption algorithm. It uses a pair of keys: a public key, which encrypts data, and a private key, which decrypts data. This ensures that even if the public key is known, the data cannot be decrypted without the private key.
 
 Why Double and Not Single Encryption?
 
 While single encryption might be sufficient for many applications, double encryption is chosen for scenarios where data sensitivity is extremely high, or where regulatory or compliance demands dictate stronger data protection. By using two distinct encryption methods, we ensure that the vulnerabilities or weaknesses of one method are offset by the strengths of the other.
 Considerations
 
-    Performance: Double encryption requires more computational resources than single encryption. However, for applications where security is paramount, this trade-off is often deemed acceptable.
+Performance: Double encryption requires more computational resources than single encryption. However, for applications where security is paramount, this trade-off is often deemed acceptable.
 
-    Key Management: Properly managing and storing the encryption keys is crucial. Losing access to the keys, especially with RSA's private key, means data can become irretrievable.
+Key Management: Properly managing and storing the encryption keys is crucial. Losing access to the keys, especially with RSA's private key, means data can become irretrievable.
 
 Getting Started
 
-    Clone the repository:
+Clone the repository:
 
-   
-
-git clone https://github.com/ishaiva/webappchat.git
+    git clone https://github.com/ishaiva/webappchat.git
 
 Navigate into the project directory:
 
-
-
-cd webchat
+    cd webchat
 
 Install the required packages:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
+
+setup keys
 
     sudo python3 setup.py
 
@@ -82,14 +80,15 @@ Run the application:
 
 Usage
 
-    Open a web browser and navigate to http://192.168.1.18:5000. // This is just an example. Enter the SERVER IP and port. The IP that hosts the CHAT
+Open a web browser and navigate to http://192.168.1.18:5000. // This is just an example. Enter the SERVER IP and port. The IP that hosts the CHAT
 
-    Enter a nickname and start chatting. You can also share files and view your connection statistics.
+Enter a nickname and start chatting. You can also share files and view your connection statistics.
 
 Contributing
 
 Contributions, issues, and feature requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-License
+
+License MIT
 
 This project is licensed under the MIT License.
 Copyright 2023 ishaiva
