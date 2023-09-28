@@ -67,21 +67,48 @@ setup keys
 
     sudo python3 setup.py
 
+## Configuration for Deployment
+
+Before running the application, you'll need to configure a few settings to make it compatible with your environment.
+1. Set Server IP Address and Port
+
+Both the application server and the client-side JavaScript need to know where your server is running.
+Python App Configuration:
+
+In app.py (or wherever your main application file is located), look for a line similar to:
+
+python
+
+socketio.run(app, host='192.168.x.x', port=5000)
+
+Replace '192.168.x.x' with your server's IP address and 5000 with your desired port if different.
+Client-side JavaScript Configuration:
+
+In static/script.js, locate a line similar to:
+
+javascript
+
+var socket = io.connect('http://192.168.x.x:5000/');
+
+Replace 'http://192.168.x.x:5000/' with the correct server IP and port in the format 'http://[YOUR_SERVER_IP]:[YOUR_PORT]/'.
+2. Ensure Port Availability
+
+Make sure the port you've chosen (e.g., 5000 in the example) is open and available on your server, and there's no firewall blocking incoming/outgoing requests to that port.
+
 Run the application:
 
     sudo python3 app.py
 
-Usage
+### Usage
 
-Open a web browser and navigate to https://192.168.1.15:5000. // This is just an example. Enter the SERVER IP and port. The IP that hosts the CHAT
-
+Open a web browser and navigate to https://192.168.x.x:5000. 
 Enter a nickname and start chatting. You can also share files and view your connection statistics.
 
-Contributing
+### Contributing
 
 Contributions, issues, and feature requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-License MIT
+### License MIT
 
 This project is licensed under the MIT License.
 Copyright 2023 ishaiva
