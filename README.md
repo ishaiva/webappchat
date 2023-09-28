@@ -79,7 +79,7 @@ In app.py (or wherever your main application file is located), look for a line s
 
 python
 
-socketio.run(app, host='192.168.x.x', port=5000)
+  socketio.run(app, host='192.168.x.x', port=5000)
 
 Replace '192.168.x.x' with your server's IP address and 5000 with your desired port if different.
 Client-side JavaScript Configuration:
@@ -88,9 +88,10 @@ In static/script.js, locate a line similar to:
 
 javascript
 
-var socket = io.connect('http://192.168.x.x:5000/');
+  var socket = io.connect('http://192.168.x.x:5000/');
 
 Replace 'http://192.168.x.x:5000/' with the correct server IP and port in the format 'http://[YOUR_SERVER_IP]:[YOUR_PORT]/'.
+
 2. Ensure Port Availability
 
 Make sure the port you've chosen (e.g., 5000 in the example) is open and available on your server, and there's no firewall blocking incoming/outgoing requests to that port.
