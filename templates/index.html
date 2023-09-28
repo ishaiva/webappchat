@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat App</title>
+    <link rel="stylesheet" href="/static/styles.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.0.1/socket.io.js"></script>
+    <script src="/static/script.js" defer></script>
+</head>
+<body>
+    <div id="chat-container">
+        <input type="text" id="nickname" placeholder="Enter Nickname">
+        <div id="messages" class="messages"></div>
+        <input type="text" id="message" placeholder="Enter Message">
+        <div id="buttons-container">
+            <button id="send-button" onclick="sendMessage()">Send</button>
+            <button id="share-file-button" onclick="shareFile()">Share File</button>
+        <div id="statistics">
+   		<p id="clientIP">Client IP: Fetching...</p>
+    		<p id="serverIP">Server IP: Fetching...</p>
+    		<p id="ping">Ping: Calculating...</p>
+	</div>
+	</div>
+        </div>
+    </div>
+</body>
+</html>
+
