@@ -73,7 +73,7 @@ Run the application:
 
 Usage
 
-Open a web browser and navigate to https://192.168.1.18:5000. // This is just an example. Enter the SERVER IP and port. The IP that hosts the CHAT
+Open a web browser and navigate to https://192.168.1.15:5000. // This is just an example. Enter the SERVER IP and port. The IP that hosts the CHAT
 
 Enter a nickname and start chatting. You can also share files and view your connection statistics.
 
