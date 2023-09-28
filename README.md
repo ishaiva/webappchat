@@ -4,14 +4,7 @@
 WebChat is a real-time chat application designed with a strong emphasis on user privacy and data protection. Utilizing double encryption, WebChat ensures that your messages are always kept away from prying eyes.
 Table of Contents
 
- Features
- Double Encryption
- Getting Started
- Usage
- Contributing
- License
-
-Features
+## Features
 
   Real-Time Chat: Seamless real-time messaging to keep you connected with your peers.
   
@@ -21,7 +14,7 @@ Features
 
   Intuitive User Interface: A user-friendly design to make your chat experience smooth.
 
-Double Encryption
+## Double Encryption
 
 WebChat prioritizes security by using a double encryption mechanism. This provides an additional layer of protection, ensuring that even if one encryption method is compromised, the data remains protected by the second encryption layer.
 How Double Encryption Works
@@ -41,13 +34,13 @@ Mitigate Risks: In the case of any vulnerabilities found in one encryption algor
 
 Increase Difficulty for Brute Force Attacks: Double encryption considerably increases the computational power and time required to perform brute force attacks.
 
-Encryption Algorithms Used
+## Encryption Algorithms Used
 
 First Layer: AES (Advanced Encryption Standard) – A symmetric encryption algorithm that's widely recognized for its robustness and speed. It uses block ciphers to encrypt and decrypt data in blocks.
 
 Second Layer: RSA (Rivest–Shamir–Adleman) – An asymmetric encryption algorithm. It uses a pair of keys: a public key, which encrypts data, and a private key, which decrypts data. This ensures that even if the public key is known, the data cannot be decrypted without the private key.
 
-Why Double and Not Single Encryption?
+## Why Double and Not Single Encryption?
 
 While single encryption might be sufficient for many applications, double encryption is chosen for scenarios where data sensitivity is extremely high, or where regulatory or compliance demands dictate stronger data protection. By using two distinct encryption methods, we ensure that the vulnerabilities or weaknesses of one method are offset by the strengths of the other.
 Considerations
@@ -56,7 +49,7 @@ Performance: Double encryption requires more computational resources than single
 
 Key Management: Properly managing and storing the encryption keys is crucial. Losing access to the keys, especially with RSA's private key, means data can become irretrievable.
 
-Getting Started
+## Getting Started
 
 Clone the repository:
 
