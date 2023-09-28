@@ -1,5 +1,5 @@
 
-WebChat – Secure Chat Application
+# WebChat – Secure Chat Application
 
 WebChat is a real-time chat application designed with a strong emphasis on user privacy and data protection. Utilizing double encryption, WebChat ensures that your messages are always kept away from prying eyes.
 Table of Contents
@@ -80,7 +80,7 @@ Run the application:
 
 Usage
 
-Open a web browser and navigate to http://192.168.1.18:5000. // This is just an example. Enter the SERVER IP and port. The IP that hosts the CHAT
+Open a web browser and navigate to https://192.168.1.18:5000. // This is just an example. Enter the SERVER IP and port. The IP that hosts the CHAT
 
 Enter a nickname and start chatting. You can also share files and view your connection statistics.
 
